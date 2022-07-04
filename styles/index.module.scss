@@ -1,0 +1,47 @@
+@use 'library.scss' as lib;
+.IndexContainer {
+  width: 100%;
+  height: 100%;
+  padding: map-get(lib.$gap, xl);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:max-content 1fr max-content;
+
+}
+
+.InfContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: map-get(lib.$gap, md);
+
+}
+
+.Logo {
+  width: map-get(lib.$size, lg);
+  height: map-get(lib.$size, lg);
+}
+
+.Title {
+  text-align: center;
+  color: map-get(lib.$colors, primary);
+}
+
+.Description {
+  padding:0 map-get(lib.$gap, md) ;
+}
+
+.BoardContainer {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.Loader:global {
+  width:  map-get(lib.$size, xl);
+  height:  map-get(lib.$size, xl);
+}
+/* ----------------------------------------------------- */
+.Footer {
+  font-size: map-get(lib.$font-size, sl );
+}

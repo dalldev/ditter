@@ -1,0 +1,17 @@
+@use 'styles/library.scss' as lib;
+
+.Header {
+  height: 53px;
+  padding: 0 map-get(lib.$gap, md );
+
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  gap: map-get(lib.$gap, sl);
+
+  position: sticky;
+  top: 0;
+
+  background-color: #ffffffd9;
+  backdrop-filter: blur(12px);
+}

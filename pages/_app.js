@@ -1,7 +1,10 @@
-import '../styles/globals.css'
+import "styles/reset.scss"
+import styles from "styles/app.module.scss"
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <div className={styles.AppContainer}>
+      <Component {...pageProps} />
+    </div>
+  )
 }
-
-export default MyApp

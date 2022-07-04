@@ -1,0 +1,54 @@
+@use './library.scss' as lib;
+
+:root {
+  font-size: map-get(lib.$font-size, md);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #eee9;
+  background-image: radial-gradient(map-get(lib.$colors, secondary) 1px, transparent 1px),
+   radial-gradient(map-get(lib.$colors, secondary) 1px, transparent 1px);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+
+  font-family: sans-serif;
+
+  overflow: hidden;
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+}
+/*  */
+
+button {
+  appearance: none;
+  color: black;
+  text-align: center;
+  align-items: flex-start;
+  background-color: transparent;
+  padding: 1px 6px;
+  border: none; 
+  outline: none;
+}
+
+button:active {
+  border-style: none;
+}
+
+button:focus-visible {
+  outline: black auto 1px; 
+}

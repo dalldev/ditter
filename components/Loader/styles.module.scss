@@ -1,0 +1,22 @@
+@use 'styles/library.scss' as lib;
+
+.Loader {
+  width: map-get(lib.$size, md);
+  height: map-get(lib.$size, md);
+
+  border: solid transparent 5px;
+  border: solid 5px  map-get(lib.$colors, primary-alpha);
+  border-left: solid 5px map-get(lib.$colors, text); 
+  border-radius: 50%;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

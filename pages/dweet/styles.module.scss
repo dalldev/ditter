@@ -1,0 +1,27 @@
+@use 'styles/library.scss' as lib;
+
+.Header {
+}
+
+.Main {
+  padding: map-get(lib.$gap, sl ) map-get(lib.$gap, md );
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: map-get(lib.$gap, sl );
+
+  .Avatar {
+
+  }
+
+  .Content {
+    .Textarea {
+      font-family: sans-serif;
+      width: 100%;
+      height: auto;
+      resize: none;
+      border: none;
+      outline: none;
+      font-size: map-get(lib.$font-size, lg );
+    }
+  }
+}

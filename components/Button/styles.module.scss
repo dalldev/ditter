@@ -1,0 +1,26 @@
+@use 'styles/library.scss' as lib;
+
+.Button {
+  padding: map-get(lib.$padding, md) map-get(lib.$padding, lg );
+  border-radius: map-get(lib.$border-radius, circle);
+  color: map-get(lib.$colors, text-contrast );
+  background-color: map-get(lib.$colors, secondary);
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &[class~="circle"] {
+    width: map-get(lib.$size, lg );
+    height: map-get(lib.$size, lg );
+    display: inline-block;
+    border-radius: 50%;
+    padding: map-get(lib.$padding, sl );
+
+    svg {
+      width: 100%;
+      height: 100%;
+      color: white;
+    }
+  }
+}

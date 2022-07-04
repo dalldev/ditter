@@ -1,0 +1,8 @@
+@use 'styles/library.scss' as lib;
+
+.Avatar {
+  width: map-get(lib.$size, md);
+  height: map-get(lib.$size, md);
+
+  border-radius: 50%;
+}

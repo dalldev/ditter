@@ -1,0 +1,45 @@
+$size: (
+  "sl": 32px,
+  "md": 44px,
+  "lg": 48px,
+  "xl": 56px
+);
+
+$colors: (
+  "primary": #00acee,
+  "primary-alpha": #00acee33,
+  "secondary": #1d9bf0,
+  "secondary-alpha": #87cbe633,
+  "bg": white,
+  "text": #000,
+  "text-contrast": white
+);
+
+$gap: (
+  "xs": 8px,
+  "sl": 12px,
+  "md": 16px,
+  "lg": 32px,
+  "xl": 64px
+);
+
+$padding: (
+  "xs": 8px,
+  "sl": 12px,
+  "md": 16px,
+  "lg": 20px,
+  "xl": 24px
+);
+
+$border-radius: (
+  "xs": 0.1rem,
+  "sl": 0.25rem,
+  "md": 0.5rem,
+  "circle": 999px
+);
+
+$font-size: (
+  "sl": 13px,
+  "md": 16px,
+  "lg": 20px,
+);

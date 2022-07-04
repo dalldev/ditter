@@ -1,0 +1,15 @@
+@use './library.scss' as lib;
+
+.AppContainer {
+  width: 100%;
+  height: 100vh;
+  
+  background-color: map-get(lib.$colors, bg);
+  
+  @media (min-width: 400px) {
+    width: 400px;
+    height: 95vh;
+    overflow: hidden;
+    border-radius: map-get(lib.$border-radius, md);
+  }
+}
